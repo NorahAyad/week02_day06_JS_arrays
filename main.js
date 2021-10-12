@@ -36,7 +36,16 @@ let height=characters.map((element)=> element.height )
 //REDUCE
 
 let name1=characters.reduce((acc,element)=> acc+element.height,0)
-let name2=characters.reduce((acc,element)=> acc+element.eye_color,0)
+let name2=characters.reduce((acc,element)=> {
+let color=element.eye_color;
+if(acc[color]){
+    acc[color]++;
+}else{
+    acc[color]=1;
+}
+return acc;
+
+})
 
 // FILTER 
 
