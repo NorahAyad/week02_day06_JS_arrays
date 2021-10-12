@@ -52,7 +52,7 @@ return acc;
 
 let heightFilter=characters.filter((element)=> element.height <200)
 
-let genderFilter=characters.filter((element)=> element.gender==="female")
+let genderFilter=characters.filter((element)=> element.gender==="male")
 
 //SORT
 let sortByName=characters.sort((a,b)=>{
